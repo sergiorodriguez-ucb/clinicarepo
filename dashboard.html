@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — Clínica</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="app">
+
+    <aside class="sidebar">
+      <div class="marca">Clínica Vitalis</div>
+      <nav>
+        <a href="dashboard.html" class="activo">Dashboard</a>
+        <a href="pacientes.html">Pacientes</a>
+        <a href="citas.html">Citas</a>
+      </nav>
+      <div class="usuario">
+        Conectado como<br><strong>Admin</strong><br>
+        <a href="login.html">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="contenido">
+      <div class="encabezado-pagina">
+        <div>
+          <h1>Hola, Admin Bienvenido</h1>
+        </div>
+        <a href="registrar-cita.html" class="boton boton-primario">+ Nueva cita</a>
+      </div>
+
+      <div class="grid-metricas">
+        <div class="metrica">
+          <div class="valor">128</div>
+          <div class="etiqueta">Pacientes registrados</div>
+        </div>
+        <div class="metrica">
+          <div class="valor">7</div>
+          <div class="etiqueta">Citas para hoy</div>
+        </div>
+        <div class="metrica">
+          <div class="valor">3</div>
+          <div class="etiqueta">Citas pendientes de confirmar</div>
+        </div>
+        <div class="metrica">
+          <div class="valor">1</div>
+          <div class="etiqueta">Cita cancelada esta semana</div>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <h2 style="font-size:1.1rem; margin-bottom:1rem;">Próximas citas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Hora</th>
+              <th>Paciente</th>
+              <th>Motivo</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>09:00</td>
+              <td><a class="enlace-paciente" href="pacientes.html">Renato Aguilar</a></td>
+              <td>Control de presión arterial</td>
+              <td><span class="etiqueta-estado estado-activo">Confirmada</span></td>
+            </tr>
+            <tr>
+              <td>10:30</td>
+              <td><a class="enlace-paciente" href="pacientes.html">Camila Ríos</a></td>
+              <td>Chequeo general</td>
+              <td><span class="etiqueta-estado estado-pendiente">Pendiente</span></td>
+            </tr>
+            <tr>
+              <td>11:15</td>
+              <td><a class="enlace-paciente" href="pacientes.html">Marco Salvatierra</a></td>
+              <td>Resultados de laboratorio</td>
+              <td><span class="etiqueta-estado estado-activo">Confirmada</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:1rem;"><a href="citas.html">Ver todas las citas →</a></p>
+      </div>
+
+    </main>
+  </div>
+</body>
+</html>
