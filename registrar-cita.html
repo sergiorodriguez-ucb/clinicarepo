@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar cita — Clínica</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="marca">Clínica Vitalis</div>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="pacientes.html">Pacientes</a>
+        <a href="citas.html" class="activo">Citas</a>
+      </nav>
+      <div class="usuario">
+        Conectado como<br><strong>Admin</strong><br>
+        <a href="index.html">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="contenido">
+      <div class="encabezado-pagina">
+        <div>
+          <h1>Registrar cita</h1>
+          <p>Elegí un paciente ya registrado y programá su próxima cita.</p>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <form class="formulario" action="citas.html" method="get">
+
+          <div class="campo">
+            <label for="paciente">Paciente (*)</label>
+            <select id="paciente" name="paciente" required>
+              <option value="">Selecciona un paciente...</option>
+              <option>Renato Aguilar</option>
+              <option>Camila Ríos</option>
+              <option>Marco Salvatierra</option>
+              <option>Julieta Fernández</option>
+              <option>Hugo Vargas</option>
+            </select>
+            <span class="ayuda">¿El paciente no está en la lista? <a href="registrar-paciente.html">Registralo primero</a>.</span>
+          </div>
+
+          <div class="fila-campos">
+            <div class="campo">
+              <label for="fecha">Fecha (*)</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="campo">
+              <label for="hora">Hora (*)</label>
+              <input type="time" id="hora" name="hora" required>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="motivo">Motivo de la consulta (*)</label>
+            <input type="text" id="motivo" name="motivo" placeholder="Ej. Control de presión arterial" required>
+          </div>
+
+          <div class="campo">
+            <label for="medico">Médico asignado</label>
+            <select id="medico" name="medico">
+              <option>Dra. Marisol Peña</option>
+              <option>Dr. Ignacio Rojas</option>
+              <option>Dra. Belén Suárez</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="notas">Notas adicionales <span class="ayuda">(opcional)</span></label>
+            <textarea id="notas" name="notas" rows="3" placeholder="Indicaciones previas, estudios a llevar, etc."></textarea>
+          </div>
+
+          <div class="acciones-formulario">
+            <button type="submit" class="boton boton-primario">Guardar cita</button>
+            <a href="citas.html" class="boton boton-secundario">Cancelar</a>
+          </div>
+        </form>
+      </div>
+      <span class="ayuda">(*) Campos obligatorios</span>
+    </main>
+  </div>
+
+</body>
+</html>
