@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pacientes — Clínica </title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="app">
+
+    <aside class="sidebar">
+      <div class="marca">Clínica Vitalis</div>
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="pacientes.html" class="activo">Pacientes</a>
+        <a href="citas.html">Citas</a>
+      </nav>
+      <div class="usuario">
+        Conectado como<br><strong>Admin</strong><br>
+        <a href="login.html">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="contenido">
+      <div class="encabezado-pagina">
+        <div>
+          <h1>Pacientes</h1>
+          <p>128 pacientes registrados en el sistema.</p>
+        </div>
+        <a href="registrar-paciente.html" class="boton boton-primario">+ Registrar paciente</a>
+      </div>
+
+      <div class="tarjeta" style="padding:0;">
+        <table>
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Teléfono</th>
+              <th>Última visita</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a class="enlace-paciente" href="citas.html">Renato Aguilar</a></td>
+              <td>34</td>
+              <td>+591 700-11223</td>
+              <td>28 ago 2026</td>
+              <td><span class="etiqueta-estado estado-activo">Activo</span></td>
+            </tr>
+            <tr>
+              <td><a class="enlace-paciente" href="citas.html">Camila Ríos</a></td>
+              <td>27</td>
+              <td>+591 700-44556</td>
+              <td>25 ago 2026</td>
+              <td><span class="etiqueta-estado estado-activo">Activo</span></td>
+            </tr>
+            <tr>
+              <td><a class="enlace-paciente" href="citas.html">Marco Salvatierra</a></td>
+              <td>52</td>
+              <td>+591 700-77889</td>
+              <td>20 ago 2026</td>
+              <td><span class="etiqueta-estado estado-activo">Activo</span></td>
+            </tr>
+            <tr>
+              <td><a class="enlace-paciente" href="citas.html">Julieta Fernández</a></td>
+              <td>19</td>
+              <td>+591 700-99001</td>
+              <td>12 jul 2026</td>
+              <td><span class="etiqueta-estado estado-pendiente">Sin citas próximas</span></td>
+            </tr>
+            <tr>
+              <td><a class="enlace-paciente" href="citas.html">Hugo Vargas</a></td>
+              <td>61</td>
+              <td>+591 700-33221</td>
+              <td>03 jun 2026</td>
+              <td><span class="etiqueta-estado estado-cancelado">Inactivo</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>
